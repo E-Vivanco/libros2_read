@@ -28,7 +28,7 @@ return res.json()
 //return {items: []}
 }
 
-export default async function BlogPage() {
+export default async function LibrosPage() {
     const data = await getData()
   //  const dbHello = await helloWorld()
     const items = data && data.items ? [...data.items] : []
