@@ -2,7 +2,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import LikeBook  from "@/complements/LikeBook"
-import getDomain from "@/app/lib/getDomain";
+//import getDomain from "@/app/lib/getDomain";
 //const i=0
 //let libros_ok=[]
 
