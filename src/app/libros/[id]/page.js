@@ -5,13 +5,14 @@ import { LikeBook } from "../../../complements/LikeBook"
 
 
   async function fetchIdTexto(id){
-    const endpoint2 =`http://localhost:3000/api/libros/${id}`
+    {/*const endpoint2 =`http://localhost:3000/api/libros/${id}`
   
     const res2= await fetch(endpoint2)
     if(!res2.ok){
         throw new Error("Failed to fetch data")
       }
-      return res2.json()
+    return res2.json()*/}
+    return {items:[]}
   }
   export default async function Libro({params}){
     const {id} = params

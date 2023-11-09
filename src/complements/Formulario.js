@@ -19,21 +19,21 @@ return(
     <div className='conteiner-fluid'>
     <form className='w-50' autoComplete='off'>
       <div className='mb-3'>
-        <label className='form-label mx-3 my-1'>Titulo</label>
+        <label className='form-label mx-3 my-1'> TITULO </label>
         <input type='text'
                 className='form-control text-black'
                 name='title'
                 onChange={handledFormulaio }
         />
 
-        <label className='form-label mx-3 my-1'>Autor</label>
+        <label className='form-label mx-3 my-1'> AUTOR </label>
         <input type='text'
                 className='form-control text-black'
                 name='author'
                 onChange={handledFormulaio}
         />
 
-        <label className='form-label mx-3 my-1'>Categoria</label>
+        <label className='form-label mx-3 my-1'> CATEGORIA </label>
         <input type='text'
                 className='form-control text-black'
                 name='categories'
