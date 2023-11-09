@@ -4,14 +4,14 @@ import getDomain from "../lib/getDomain";
 async function getData() {
     //  endpoint - API?
     const domain = getDomain()
-     const endpoint = `${domain}/api/libros` // -> third party api request??
-     const res = await fetch(endpoint) // HTTP GET
-    {/*
-     if (!res.ok) {
+    const endpoint = `${domain}/api/libros` // -> third party api request??
+    const res = await fetch(endpoint) // HTTP GET
+    
+    {/* if (!res.ok) {
          throw new Error("Failed to fetch data")
-     }
-    return res.json()*/}
-    return {items: []}
+     }*/}
+    return res.json()
+   // return {items: []}
 }
 
 
