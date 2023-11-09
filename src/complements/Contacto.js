@@ -18,31 +18,34 @@ return(
     <>
     <div className='conteiner-fluid'>
     <form className='w-50' autoComplete='off'>
-      <div className='mb-3'>
+      <div className='mb-3 text-center'>
         <label className='form-label mx-3 my-1'> NOMBRE</label>
         <input type='text'
-                className='form-control text-black'
-                name='title'
+                className='form-control text-black my-3 mb-3'
+                name='nombre'
                 onChange={handledFormulaio }
         />
         <br/>
-        <label className='form-label mx-3 my-1'> EMAIL </label>
-        <input type='text'
-                className='form-control text-black'
-                name='author'
+        <br/>
+        <label className='form-label mx-3 my-3'> EMAIL </label>
+        <input type='email'
+                className='form-control text-black my-3 mb-3'
+                name='email'
                 onChange={handledFormulaio}
         />
         <br/>
-        <label className='form-label mx-3 my-1'> MENSAJE </label>
+        <br/>
+        <label className='form-label mx-3 my-3'> MENSAJE </label>
         <textarea  type='text'
-                className='form-control text-black'
-                name='categories'
+                className='form-control text-black my-3 mb-3'
+                name='mensaje'
+                placeholder='Ingresa mensaje'
                 onChange={handledFormulaio}
         >
         <br/>
         </textarea>
       </div>
-      <div className='bg-red-400 text-center'><button type="submit">ENVIAR</button></div>
+      <div className='text-center w-50'><button type="submit">ENVIAR</button></div>
     </form>
     
     </div>
