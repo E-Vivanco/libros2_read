@@ -1,0 +1,2 @@
+create table jsob_load (data_json jsonb); 
+copy jsob_load (data_json) from '/tmp/students.json';
