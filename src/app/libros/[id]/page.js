@@ -1,18 +1,27 @@
 //'use server'
 import Image from "next/image"
 import Link from "next/link"
-import { LikeBook } from "../../../complements/LikeBook"
-
+import { LikeBook } from "@/components/LikeBook"
+import getDomain from "@/app/lib/getDomain";
+//const i=0
+//let libros_ok=[]
 
   async function fetchIdTexto(id){
-    {/*const endpoint2 =`http://localhost:3000/api/libros/${id}`
+   {/* const domain = getDomain()
+    const endpoint2 =`${domain}/api/libros/${id}`
   
-    const res2= await fetch(endpoint2)
+    const res2= await fetch(endpoint2,{
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+        }
+     })
     if(!res2.ok){
         throw new Error("Failed to fetch data")
       }
-    return res2.json()*/}
-    return {items:[]}
+    return res2.json()
+    */}   
+     return {items: []}
   }
   export default async function Libro({params}){
     const {id} = params
@@ -27,7 +36,7 @@ import { LikeBook } from "../../../complements/LikeBook"
       <div className="card mx-5 px-1 text-justify" >
       <Image src={libro['items'][id -1].thumbnailUrl} width={50} height={50} alt="img" priority={true} />  
       <div className="text-right">
-      <Link href={'http://localhost:3000/libros'} className="bg-red-400"><strong>Libros</strong></Link>
+      <Link href={'`${domain}`/libros'} className="bg-red-400"><strong>Libros</strong></Link>
       </div>
       <hr/>
       <div className="text-center">  
@@ -43,3 +52,4 @@ import { LikeBook } from "../../../complements/LikeBook"
     )
   }
   
+ 
