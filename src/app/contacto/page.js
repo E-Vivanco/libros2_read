@@ -1,7 +1,10 @@
 import React from 'react'
+import Contacto from '../../complements/Contacto'
 
-export default function Contacto() {
+export default function Contactopage() {
   return (
-    <div>CONTACTO</div>
+    <div>
+      <Contacto/>
+    </div>
   )
 }
