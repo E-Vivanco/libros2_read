@@ -25,20 +25,21 @@ return(
                 name='title'
                 onChange={handledFormulaio }
         />
-
+        <br/>
         <label className='form-label mx-3 my-1'> EMAIL </label>
         <input type='text'
                 className='form-control text-black'
                 name='author'
                 onChange={handledFormulaio}
         />
-
+        <br/>
         <label className='form-label mx-3 my-1'> MENSAJE </label>
         <textarea  type='text'
                 className='form-control text-black'
                 name='categories'
                 onChange={handledFormulaio}
         >
+        <br/>
         </textarea>
       </div>
       <div className='bg-red-400 text-center'><button type="submit">ENVIAR</button></div>
