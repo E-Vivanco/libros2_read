@@ -40,6 +40,7 @@ import getDomain from "../../lib/getDomain";
       <h2><strong>Authors:</strong> </h2><p>{libro['items'][id -1].authors}</p>
       <h2><strong>Categories:</strong> </h2><p>{libro['items'][id -1].categories}</p>
       <h2><strong>Pages:</strong> </h2><p>{libro['items'][id -1].pageCount}</p>
+      <h2><strong>Fecha Publicacion:</strong> </h2><p>{libro['items'][id -1].publishedDate.$date}</p>
       </div> 
       <div className="text-right">
       <Link href={'http://localhost:3000/libros'} className="bg-red-400"><strong>Libros</strong></Link>

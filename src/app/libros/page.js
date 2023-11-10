@@ -50,6 +50,8 @@ export default async function LibrosPage() {
             <p>{item.categories} </p>
             <h2><strong>Pages:</strong></h2>
             <p>{item.pageCount} </p>
+            <h2><strong>Fecha_Publicacion:</strong></h2>
+            <p>{item.publishedDate.$date}</p>
             <h2><strong>Description:</strong> </h2>
             <p>{item.shortDescription}</p>
             </article>
