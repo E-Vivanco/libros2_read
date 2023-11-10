@@ -44,6 +44,13 @@ export default async function LibrosPage() {
             <h2 className="bg-blue-500 text-black text-center"><strong>{item.title}</strong></h2>
             <h2>{item.id}</h2>
             <Image src={item.thumbnailUrl} width={50} height={50} alt="Img" priority={true} style={imageStyle} className="card mx-5"/>
+            <h2><strong>Authors:</strong> </h2>
+            <p>{item.authors} </p>
+            <h2><strong>Categories:</strong> </h2>
+            <p>{item.categories} </p>
+            <h2><strong>Pages:</strong></h2>
+            <p>{item.pageCount} </p>
+            <h2><strong>Description:</strong> </h2>
             <p>{item.shortDescription}</p>
             </article>
             </Link>

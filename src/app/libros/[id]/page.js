@@ -35,7 +35,12 @@ import getDomain from "../../lib/getDomain";
       <p className="bg-blue-500 text-center text-black"><strong>{libro['items'][id -1].title}</strong></p>
       <br/>
       <div className="card mx-5 px-1 text-justify" >
-      <Image src={libro['items'][id -1].thumbnailUrl} width={50} height={50} alt="img" priority={true} />  
+      <Image src={libro['items'][id -1].thumbnailUrl} width={50} height={50} alt="img" priority={true} /> 
+      <div>
+      <h2><strong>Authors:</strong> </h2><p>{libro['items'][id -1].authors}</p>
+      <h2><strong>Categories:</strong> </h2><p>{libro['items'][id -1].categories}</p>
+      <h2><strong>Pages:</strong> </h2><p>{libro['items'][id -1].pageCount}</p>
+      </div> 
       <div className="text-right">
       <Link href={'http://localhost:3000/libros'} className="bg-red-400"><strong>Libros</strong></Link>
       </div>
@@ -46,7 +51,7 @@ import getDomain from "../../lib/getDomain";
       <div  className="card mx-5 px-2 text-center"> 
       <LikeBook />
       </div>
-      <p>{libro['items'][id -1].longDescription}</p>
+      <h2><strong>Description: </strong></h2><p>{libro['items'][id -1].longDescription}</p>
       </div>
      
       </article>
