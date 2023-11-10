@@ -73,6 +73,9 @@ export default async function LibrosPage() {
     </>
   
 }
+export const runtime = 'edge' //node.js
+export const preferredRegion = 'auto'
+
 /**
  * 
  *<div classname="card" style="width: 18rem;">
