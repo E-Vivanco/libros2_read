@@ -36,7 +36,7 @@ return(
         <br/>
         <br/>
         <label className='form-label mx-3 my-3'> MENSAJE </label>
-        <textarea  type='text'
+        <textarea  type='textarea'
                 className='form-control text-black my-3 mb-3'
                 name='mensaje'
                 placeholder='Ingresa mensaje'
