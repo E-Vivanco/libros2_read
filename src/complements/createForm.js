@@ -51,7 +51,7 @@ export default function FormCreate() {
         <br/>
         <label>Pass
         <br/>
-        <input type="pass" 
+        <input type="password" 
         defaultValue="11111"
         name="Pass" 
         placeholder='Ingresa tu pass'

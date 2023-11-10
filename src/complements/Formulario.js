@@ -42,7 +42,7 @@ return(
       </div>
       <div className='bg-blue-400 text-center'><button type="submit">BUSCAR</button></div>
     </form>
-    
+    {/*formulario && JSON.stringify(formulario)*/}
     </div>
     </>
   )
