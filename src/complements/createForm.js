@@ -29,31 +29,34 @@ export default function FormCreate() {
   }
   return <>
     <form onSubmit={handledForm}>
-        <label>Nombre
+        <label for="Name">Nombre
         <br/>
         <input type="text" 
         defaultValue="Read-Connect"
         name="Name" 
+        id="Name"
         placeholder='Ingresa tu nombre'
         className='text-black'
         /></label>
         
         <br/>
-        <label>Email
+        <label for="Email">Email
         <br/>
         <input type="email" 
         defaultValue="email@ss.cl"
         name="Email" 
+        id="Email"
         placeholder='Ingresa tu email'
         className='text-black'
         /></label>
         
         <br/>
-        <label>Pass
+        <label for="Pass">Pass
         <br/>
         <input type="password" 
         defaultValue="11111"
         name="Pass" 
+        id="Pass"
         placeholder='Ingresa tu pass'
         className='text-black'
         /></label>
